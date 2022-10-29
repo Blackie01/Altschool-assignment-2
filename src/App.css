@@ -2,9 +2,11 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  overflow-y: hidden;
-  overflow-x: hidden;
+}
+
+.main-container{
   background-color: #6F4E37;
+  padding-bottom: 20px;
 }
 
 .jumbo-container{
@@ -12,9 +14,17 @@
   flex-direction: column;
   gap: 20px;
   color: #fff;
-  padding: 20px;
+  padding: 10% 20px;
   align-items: center;
-  margin-top: 10%;
+  justify-content: center;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+ 
+}
+
+.apipage-container{
+  height: max-content;
 }
 
 .jumbo-text{
@@ -31,7 +41,63 @@ button{
   width: 200px;
   height: 70px;
   font-size: 20px;
-
-
+  background-color: #6F4E37;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.backButton{
+  width: 60px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: small;
+  margin: 10px 0 0 10px;
+}
+
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 100vh;
+}
+
+.page-flex{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+}
+
+.btn{
+  height: 60px;
+  width: 60px;
+  background-color: #df884a;
+  color: #fff;
+  cursor: pointer;
+  
+}
+
+.active{
+  background-color: aquamarine;
+  height: 60px;
+  width: 60px;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: default;
 }
