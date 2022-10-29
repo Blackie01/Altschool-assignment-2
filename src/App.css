@@ -102,8 +102,8 @@ button {
 button:disabled,
 button[disabled] {
   border: none;
-  background-color: #cccccc;
-  color: #666666;
+  background-color: #805f4a;
+  color: white;
   cursor: default;
 }
 

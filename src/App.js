@@ -64,14 +64,14 @@ function ApiCall() {
 
       <div className="page-flex">
           <button className="btn" onClick={()=>Pagination(page-1)} disabled={page===1}>prev</button>
-          <button className={`${page===1?'active':'btn'}`} onClick={()=>Pagination(1)}>1</button>
-          <button className={`${page===2?'active':'btn'}`} onClick={()=>Pagination(2)}>2</button>
-          <button className={`${page===3?'active':'btn'}`} onClick={()=>Pagination(3)}>3</button>
-          <button className={`${page===4?'active':'btn'}`} onClick={()=>Pagination(4)}>4</button>
-          <button className={`${page===5?'active':'btn'}`} onClick={()=>Pagination(5)}>5</button>
-          <button className={`${page===6?'active':'btn'}`} onClick={()=>Pagination(6)}>6</button>
-          <button className={`${page===7?'active':'btn'}`} onClick={()=>Pagination(7)}>7</button>
-          <button className={`${page===8?'active':'btn'}`} onClick={()=>Pagination(8)}>8</button>
+          <button className={`${page===1?'active':'btn'}`} onClick={()=>Pagination(1)} disabled={page===1}>1</button>
+          <button className={`${page===2?'active':'btn'}`} onClick={()=>Pagination(2)} disabled={page===2}>2</button>
+          <button className={`${page===3?'active':'btn'}`} onClick={()=>Pagination(3)} disabled={page===3}>3</button>
+          <button className={`${page===4?'active':'btn'}`} onClick={()=>Pagination(4)} disabled={page===4}>4</button>
+          <button className={`${page===5?'active':'btn'}`} onClick={()=>Pagination(5)} disabled={page===5}>5</button>
+          <button className={`${page===6?'active':'btn'}`} onClick={()=>Pagination(6)} disabled={page===6}>6</button>
+          <button className={`${page===7?'active':'btn'}`} onClick={()=>Pagination(7)} disabled={page===7}>7</button>
+          <button className={`${page===8?'active':'btn'}`} onClick={()=>Pagination(8)} disabled={page===8}>8</button>
           <button className="btn" onClick={()=>Pagination(page+1)} disabled={page===8}>next</button>
       </div>
     </section>
