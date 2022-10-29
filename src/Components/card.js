@@ -2,6 +2,7 @@ import React from "react";
 import "./card.css";
 
 export default function Card({ userData }) {
+    // getting the data from the API array
   console.log(userData);
   const userName = `${userData.name.title} ${userData.name.first} ${userData.name.last}`;
   const genders = `${userData.gender}`;

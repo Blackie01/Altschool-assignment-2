@@ -1,15 +1,15 @@
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-.main-container{
-  background-color: #6F4E37;
+.main-container {
+  background-color: #6f4e37;
   padding-bottom: 20px;
 }
 
-.jumbo-container{
+.jumbo-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -20,33 +20,33 @@
   height: 100vh;
   overflow-y: hidden;
   overflow-x: hidden;
- 
+  text-align: center;
 }
 
-.apipage-container{
+.apipage-container {
   height: max-content;
 }
 
-.jumbo-text{
+.jumbo-text {
   font-size: 100px;
 }
 
-.jumbo-mini-text{
+.jumbo-mini-text {
   font-size: 30px;
 }
 
-button{
+button {
   color: #fff;
   border: 1px solid white;
   width: 200px;
   height: 70px;
   font-size: 20px;
-  background-color: #6F4E37;
+  background-color: #6f4e37;
   text-decoration: none;
   cursor: pointer;
 }
 
-.backButton{
+.backButton {
   width: 60px;
   height: 40px;
   border-radius: 10px;
@@ -54,14 +54,14 @@ button{
   margin: 10px 0 0 10px;
 }
 
-.card-container{
+.card-container {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
 }
 
-.loader{
+.loader {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,35 +69,66 @@ button{
   height: 100vh;
 }
 
-.page-flex{
+.page-flex {
   display: flex;
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 10px;
-
+  gap: 2px;
 }
 
-.btn{
-  height: 60px;
-  width: 60px;
-  background-color: #df884a;
-  color: #fff;
+.btn {
+  height: 50px;
+  width: 50px;
+  background-color: #664732;
+  color: #fcfcfc;
   cursor: pointer;
-  
+  border: none;
+  font-size: 15px;
 }
 
-.active{
-  background-color: aquamarine;
-  height: 60px;
-  width: 60px;
+.active {
+  background-color: #805f4a;
+  height: 50px;
+  width: 50px;
   color: white;
   cursor: pointer;
+  border: none;
+  font-size: 15px;
 }
 
 button:disabled,
-button[disabled]{
-  border: 1px solid #999999;
+button[disabled] {
+  border: none;
   background-color: #cccccc;
   color: #666666;
   cursor: default;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 600px) {
+  .jumbo-container {
+    text-align: center;
+    padding-top: 0px;
+  }
+
+  .jumbo-text {
+    font-size: 45px;
+  }
+
+  .jumbo-mini-text {
+    font-size: 24px;
+  }
+
+  .home-button {
+    width: 170px;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .page-flex {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
 }

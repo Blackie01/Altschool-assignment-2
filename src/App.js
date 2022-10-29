@@ -11,7 +11,7 @@ const Jumbo = () => {
       <h1 className="jumbo-text">Oludamola Oni</h1>
       <p className="jumbo-mini-text">AltSchool Assignment 2</p>
       <Link to="/apicall">
-        <button>Click me</button>
+        <button className="home-button">Click me</button>
       </Link>
     </section>
   );
@@ -52,7 +52,7 @@ function ApiCall() {
       </Link>
 
 
-      {profile.length === 0 && <h1 className="loader">Loading...</h1>}
+      {profile.length === 0 && <h1 className="loader">Loading...</h1>} 
 
       <div className="card-container">
         {profile.map((user, i) => (
@@ -91,22 +91,3 @@ function App() {
 }
 
 export default App;
-
-/*
-Alright. Here we go with this assignment. 
-
-* Create content like a blog format. Different contents in
-a list format
-* Each component will have a link that uses react-router
-* Create a 404 page for when a wrong link is used
-* Find out and setup error boundary
-* use pagination to scroll through con
-* implement accessibility 
-* implement disabled state
-* API loading states
-
-
-*/
-
-//manage state to show loading spinner
-//for the pagination, on click of any pagination, load new 10. 
